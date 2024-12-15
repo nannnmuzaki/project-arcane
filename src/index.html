@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -5,10 +6,11 @@
     <link rel="stylesheet" href="css/globals.css" />
     <link rel="stylesheet" href="css/styleguide.css" />
     <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="icon" type="image/x-icon" href="assets/riotfav.ico">
   </head>
 
   <body>
-    <audio id="backgroundMusic" src="assets/arcane-OST.mp3"></audio>
     <div class="desktop-hompage">
       <div class="div">
         <div class="frame">
@@ -46,7 +48,7 @@
   
                     </p>
                   </div>
-                  <div class="review-btn"><div class="text-wrapper-4">Review</div></div>
+                  <div class="review-btn"><div class="text-wrapper-4"><a href="episode.php">Review</a></div></div>
                 </div>
                 <div class="card">
                   <img class="thumbnail" src="assets/episode2.jpg" />
@@ -233,7 +235,7 @@
             <div class="navlink-container">
               <div class="navlink" style="margin-left: 20px;">
                 <div class="text-wrapper-9"><span id="focusEpisode" style="cursor: pointer;">EPISODES</span></div>
-                <div class="text-wrapper-9" style="cursor: pointer;"><a href="login.html" style="color: #d6d6d6;">LOGIN</a></div>
+                <div class="text-wrapper-9" style="cursor: pointer;"><a href="signin.html" style="color: #d6d6d6;">LOGIN</a></div>
                 <div class="text-wrapper-9" style="cursor: pointer;"><img id="musicControl" src="assets/sound.png" width="5%"></div>
               </div>
             </div>
@@ -246,15 +248,16 @@
         document.getElementById('focusthisEpisode').scrollIntoView({behavior: "smooth"});
         document.getElementById('focusthisEpisode').focus();
       });
+      
       const musicControl = document.getElementById('musicControl'); 
       const backgroundMusic = document.getElementById('backgroundMusic'); 
-
+    
       let isPlaying = false; musicControl.addEventListener('click', 
       function() { if (isPlaying) { backgroundMusic.pause(); musicControl.src = 'assets/sound.png'; } 
       else { backgroundMusic.play(); musicControl.src = 'assets/music.png';} 
       isPlaying = !isPlaying; 
       });
-
+    
       document.addEventListener("DOMContentLoaded", function() {
         const elements = document.querySelectorAll('.reveal');
         
@@ -270,6 +273,6 @@
           observer.observe(element);
         });
       });      
-  </script>
+    </script>
   </body>
 </html>

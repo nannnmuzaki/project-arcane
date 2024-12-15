@@ -1,0 +1,275 @@
+.episodes-container {
+    background-color: #000;
+    display: flex;
+    padding: 0 0 115px;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+  }
+  
+  .nav-header {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    color: #d6d6d6;
+    text-transform: uppercase;
+    font: 300 16px/1.2 IBM Plex Sans, -apple-system, Roboto, Helvetica, sans-serif;
+    position: relative;
+  }
+  
+  .nav-logo {
+    width: 143px;
+    height: auto;
+  }
+  
+  .nav-links {
+    position: absolute;
+    gap: 60px;
+    display: inline-flex;
+    align-items: flex-start;
+    margin-left: 1000px !important;
+  }
+  
+  .episodes-grid {
+    margin: 129px auto 0;
+    width: 100%;
+    max-width: 1049px;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .episodes-list {
+    width: 29%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .episodes-scroll {
+    display: flex;
+    height: 567px;
+    gap: 16px;
+    overflow: hidden;
+  }
+  
+  .episode-cards {
+    width: 252px;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+  }
+  
+  .episode-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+  }
+  
+  .episode-title {
+    color: #d6d6d6;
+    font: 500 15px/1.2 IBM Plex Sans, sans-serif;
+  }
+  
+  .episode-thumbnail {
+    position: relative;
+    border-radius: 16px;
+    aspect-ratio: 16/9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .thumbnail-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+  
+  .play-icon {
+    width: 30px;
+    height: 30px;
+    z-index: 1;
+  }
+  
+  .episode-details {
+    width: 71%;
+    display: flex;
+    flex-direction: column;
+    color: #d6d6d6;
+    font: 600 16px/1.2 IBM Plex Sans, sans-serif;
+  }
+  
+  .episode-hero {
+    width: 100%;
+    border-radius: 16px;
+  }
+  
+  .episode-heading {
+    font-size: 36px;
+    margin: 45px 0 27px;
+  }
+  
+  .episode-score {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .episode-description {
+    font-weight: 400;
+    line-height: 19px;
+    margin-right: 57px;
+  }
+  
+  .review-section {
+    border-radius: 16px;
+    border: 1px solid #1e1e1e;
+    margin: 45px auto;
+    padding: 34px 60px;
+    width: 100%;
+    max-width: 1080px;
+  }
+  
+  .review-heading {
+    color: #d6d6d6;
+    font: 500 24px/1.2 IBM Plex Sans, sans-serif;
+    text-align: center;
+  }
+  
+  .review-form {
+    margin-top: 32px;
+  }
+  
+  .review-input {
+    width: 100%;
+    min-height: 160px;
+    border-radius: 16px;
+    background: rgba(30, 30, 30, 0.6);
+    padding: 26px 30px;
+    color: #878787;
+    font: 400 14px/1.2 IBM Plex Sans, sans-serif;
+    border: none;
+    resize: vertical;
+  }
+  
+  .review-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+  }
+  
+  .score-input {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font: 600 16px/1.2 IBM Plex Sans, sans-serif;
+    color: #d6d6d6;
+  }
+  
+  .score-value {
+    background: #1e1e1e;
+    border-radius: 16px;
+    padding: 10px;
+  }
+  
+  .submit-review {
+    background: #1e1e1e;
+    border-radius: 16px;
+    padding: 15px 20px;
+    color: #d6d6d6;
+    font: 600 20px/1.2 IBM Plex Sans, sans-serif;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .reviews-list {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .review-card {
+    background: rgba(30, 30, 30, 0.6);
+    border-radius: 16px;
+    padding: 26px 30px;
+    display: flex;
+    gap: 16px;
+  }
+  
+  .reviewer-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  
+  .review-content {
+    flex: 1;
+    padding: 4px 0;
+  }
+  
+  .reviewer-name {
+    color: #d6d6d6;
+    font: 600 16px/1.2 IBM Plex Sans, sans-serif;
+    margin-bottom: 16px;
+  }
+  
+  .review-text {
+    color: #d6d6d6;
+    font: 400 14px/17px IBM Plex Sans, sans-serif;
+    margin-bottom: 16px;
+  }
+  
+  .review-score {
+    color: #d6d6d6;
+    font: 600 14px/1.2 IBM Plex Sans, sans-serif;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+  }
+  
+  @media (max-width: 991px) {
+    .episodes-container {
+      padding-bottom: 100px;
+    }
+    
+    .nav-header {
+      padding: 0 20px;
+    }
+    
+    .episodes-grid {
+      flex-direction: column;
+      margin-top: 40px;
+    }
+    
+    .episodes-list,
+    .episode-details {
+      width: 100%;
+    }
+    
+    .episode-description {
+      margin-right: 10px;
+    }
+    
+    .review-section {
+      padding: 0 20px;
+    }
+    
+    .review-card {
+      padding: 20px;
+    }
+  }
