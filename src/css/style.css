@@ -477,6 +477,7 @@
     height: 149px;
     top: 378px;
     left: 147px;
+    margin-left: -100px;
   }
   
   .desktop-hompage .text-wrapper-7 {
@@ -562,6 +563,7 @@
     height: 218px;
     top: 283px;
     left: 837px;
+    margin-left: -100px;
   }
   
   .desktop-hompage .element-INTRODUCTION {
@@ -612,6 +614,8 @@
     width: 142.5px;
     height: 40px;
     object-fit: cover;
+    cursor: pointer;
+    margin-left: -30px;
   }
   
   .desktop-hompage .navlink {
@@ -624,7 +628,7 @@
   }
   
   .desktop-hompage .text-wrapper-9 {
-    position: relative;
+    position: static;
     width: fit-content;
     margin-top: -1.00px;
     font-family: "IBM Plex Sans", Helvetica;
@@ -636,10 +640,12 @@
     white-space: nowrap;
     overflow: hidden; /* Add this line */
     text-overflow: clip; /* Add this line */
+    margin-right: 0px;
   }
+  
 
   .desktop-hompage .navlink-container {
-    margin-left: 20px !important;
+    margin-right: -400px !important;
   }
   
   .navlink {
@@ -647,7 +653,21 @@
     flex-direction: row;
     justify-content: space-between;
   }
-  
-  .text-wrapper-9 {
-    margin-right: 20px;
+
+  .spacer {
+    height: 100vh; /* Ensure there's enough space to scroll */
   }
+  
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  
+  
